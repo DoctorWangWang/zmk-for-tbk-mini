@@ -107,24 +107,24 @@ modcp: mod_copy {
        default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp MINUS
-&lt 1 TAB    &kp Q  &kp W    &kp E   &kp R   &kp T        &kp Y  &kp U     &kp I     &kp O    &kp P    &lt 1 EQUAL
-&kp CAPS  &kp A  &kp S    &kp D    &kp F     &kp G               &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B                &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp ENTER 
-&kp GRAVE  &kp LGUI  &kp SPACE &kp BSPC                    &kp UP &kp SPACE    &kp LBKT  &lt 2 RBKT          
-&kp LALT &none	&kp LCTRL 	&kp DEL 	       &kp LEFT   &kp RIGHT &none &kp DOWN
+&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp PLUS
+&kp TAB   &kp Q  &kp W    &kp E   &kp R   &kp T      &kp Y  &kp U     &kp I     &kp O    &kp P    &kp MINUS
+&kp CAPS  &kp A  &kp S    &kp D   &kp F  &kp G       &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&kp LSHFT &kp Z  &kp X    &kp C   &kp V  &kp B       &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT 
+&kp GRAVE  &kp BACKSLASH  &kp LSHFT &kp SPACE        &kp ENTER   &kp BSPC    &kp LBKT  &lt 2 RBKT          
+&kp LALT &none	&kp LCTRL 	&kp LGUI 	       &to 1   &kp RCTRL &none &mo 2
 
             >;
         };
         number_layer {
             label = "NUMBER";
             bindings = <
-    &trans  &none &kp F10 &kp F11   &kp F12 &none             &none  &none    &kp KP_SLASH &kp KP_MULTIPLY   &kp KP_MINUS  &none
-    &trans  &none &kp F7  &kp F8   &kp F9  &none              &none &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp KP_PLUS  &none 
-    &trans   &none  &kp F4   &kp F5   &kp F6  &none           &none &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp ENTER    &kp BSLH
-   &trans  &none  &kp F1    &kp F2    &kp F3    &none           &none &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp ENTER  &kp ENTER 
-   &trans     &trans     &trans    &trans                                  &none &none	&kp KP_N0 &kp KP_DOT	
-      &trans   &none    &trans    &trans                                       &trans     &trans      &none    &trans     	
+    &trans  &kp F1 &kp F2 &kp F3   &kp F4 &kp F5             &kp F6  &kp F7    &kp F8 &kp F9 &kp F10  &trans
+    &trans  &trans &trans  &UP  &ktrans  &trans             &trans &trans &UP &trans &trans  &trans 
+    &trans   &trans  &LEFT  &DOWN   &RIGHT  &trans          &trans &LEFT &DOWN &RIGHT &trans  &trans
+   &trans  &trans &trans  &trans  &trans    &trans          &trans &trans &trans &trans &trans &trans
+   &trans     &trans     &trans    &trans                       &trans &trans	&trans &trans	
+      &trans   &none    &trans    &trans                                       &to 0     &trans      &none    &trans     	
 
             >;
         };
